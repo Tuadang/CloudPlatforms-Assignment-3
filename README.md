@@ -55,7 +55,6 @@ cd CloudPlatforms-Assignment-3
 ### 3. Run the deployment script
 
 ```sh
-cd application
 ./deploy.sh
 ```
 This script will:
