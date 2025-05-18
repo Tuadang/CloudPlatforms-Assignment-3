@@ -85,3 +85,4 @@ SELECT * FROM entry;
 ```
 
 ---
+Since this was made in the AWS Learner Lab enviroment the terraform uses a IAM role called LabRole
