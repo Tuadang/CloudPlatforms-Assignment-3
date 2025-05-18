@@ -32,7 +32,6 @@ This project demonstrates a **multi-tier cloud architecture** for a simple CRUD 
 - [Docker](https://www.docker.com/)
 - [Terraform](https://www.terraform.io/downloads)
 - [AWS CLI](https://aws.amazon.com/cli/) (configured with your credentials)
-- An AWS account with permissions for VPC, ECS, RDS, EC2, ECR, IAM, and ACM
 
 ---
 
@@ -49,7 +48,6 @@ cd CloudPlatforms-Assignment-3
 
 - Generate an SSH key:  
   `ssh-keygen -t rsa -b 4096 -f my-bastion-key`
-- Import `my-bastion-key.pub` into AWS EC2 as a key pair (`my-bastion-key`)
 - Place `my-bastion-key.pub` in your Terraform directory
 
 ### 3. Run the deployment script
@@ -63,6 +61,7 @@ This script will:
 - Push it to ECR
 - Deploy all AWS infrastructure with Terraform
 
+![Example output application](./docs/img/output-example.png)
 
 ### 5. Access the Application
 
