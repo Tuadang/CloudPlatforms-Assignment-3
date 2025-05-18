@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+ENV/
+env/
+*.sqlite3
+
+# VS Code
+.vscode/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
+crash.log
+
+# Docker
+*.log
+*.pid
+
+# SSH keys
+my-bastion-key
+my-bastion-key.pem
+*.pem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore local build/test artifacts
+dist/
+build/
+*.egg-info/
