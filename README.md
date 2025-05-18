@@ -29,7 +29,6 @@ This project demonstrates a **multi-tier cloud architecture** for a simple CRUD 
 - [Terraform](https://www.terraform.io/downloads)
 - [AWS CLI](https://aws.amazon.com/cli/) (configured with your credentials)
 - An AWS account with permissions for VPC, ECS, RDS, EC2, ECR, IAM, and ACM
-- (Optional) A registered domain for HTTPS (not required for HTTP-only setup)
 
 ---
 
@@ -38,8 +37,8 @@ This project demonstrates a **multi-tier cloud architecture** for a simple CRUD 
 ### 1. Clone the Repository
 
 ```sh
-git clone https://github.com/Tuadang/CloudPlatforms-last.git
-cd CloudPlatforms-last
+git clone https://github.com/Tuadang/CloudPlatforms-Assignment-3.git
+cd CloudPlatforms-Assignment-3
 ```
 
 ### 2. Configure SSH Key for Bastion Host
