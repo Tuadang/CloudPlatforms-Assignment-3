@@ -49,7 +49,6 @@ cd CloudPlatforms-Assignment-3
 
 - Generate an SSH key:  
   `ssh-keygen -t rsa -b 4096 -f my-bastion-key`
-- Import `my-bastion-key.pub` into AWS EC2 as a key pair (`my-bastion-key`)
 - Place `my-bastion-key.pub` in your Terraform directory
 
 ### 3. Run the deployment script
