@@ -68,6 +68,8 @@ This script will:
 - After deployment, the script/outputs will show:
   - **Web App URL:** `http://<alb_dns_name>`
   - **Bastion Host Public IP:** for SSH access
+ 
+![Example output application](./docs/images/output-example.png)
 
 ### 6. SSH to Bastion Host (for DB access)
 
