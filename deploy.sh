@@ -9,6 +9,35 @@ TERRAFORM_DIR="./terraform"  # Adjust path if needed
 
 set -e
 
+cd ./Application
+# Check if AWS CLI is installed
+if ! command -v aws &> /dev/null
+then
+    echo "AWS CLI could not be found. Please install it."
+    exit 1
+fi
+
+# Check if Docker is installed
+if ! command -v docker &> /dev/null
+then
+    echo "Docker could not be found. Please install it."
+    exit 1
+fi
+
+# Check if Terraform is installed
+if ! command -v terraform &> /dev/null
+then
+    echo "Terraform could not be found. Please install it."
+    exit 1
+fi
+
+# Check if AWS credentials are configured
+if ! aws sts get-caller-identity &> /dev/null
+then
+    echo "AWS credentials are not configured. Please configure them using 'aws configure'."
+    exit 1
+fi
+
 echo "🔐 Getting AWS account ID..."
 AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
 ECR_URI="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$REPO_NAME:$IMAGE_TAG"

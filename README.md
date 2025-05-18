@@ -4,11 +4,15 @@
 
 This project demonstrates a **multi-tier cloud architecture** for a simple CRUD Flask application, deployed on AWS using Infrastructure as Code (Terraform), Docker, ECS, and RDS.
 
+![final product](./docs/img/final_product.png)
+
 **Architecture:**
 - **Frontend:** Application Load Balancer (ALB) (HTTP, port 80)
 - **Middle Tier:** Flask app in Docker, running on ECS Fargate
 - **Backend:** MySQL database on Amazon RDS
 - **Bastion Host:** For secure access to the database from your IP
+
+![diagram](./docs/img/diagram.png)
 
 ---
 
